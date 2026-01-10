@@ -23,6 +23,33 @@ Focus: Transformer Architecture (GPT-2).
 
 Description: Demonstrates the structural initialization of a GPT-2 model using the Hugging Face transformers library. It defines the configuration for 124 million parameters, including embedding dimensions, layers, and attention heads.
 
+4.This script provides a foundation for predicting housing prices using a Support Vector Regressor (SVR). It focuses on the critical data preprocessing stage, transforming raw housing data into a format suitable for high-performance machine learning.
+
+Key Features
+Automated Categorical Encoding: Utilizes One-Hot Encoding via pandas to transform qualitative features (like furnishing status or presence of air conditioning) into binary numerical values.
+
+Multicollinearity Prevention: Employs drop_first=True during dummy variable creation to avoid the dummy variable trap, ensuring model stability.
+
+Data Partitioning: Implements a standard 80/20 train-test split to allow for robust validation and performance testing.
+
+Feature Engineering Readiness: Sets the stage for feature scaling and SVR implementation using the scikit-learn ecosystem.
+
+Technologies Used
+Python: Core programming language.
+
+Pandas: Data manipulation and cleaning.
+
+Scikit-Learn: Machine learning utilities, including data splitting and model metrics.
+
+How it Works
+Load: Reads the Housing.csv dataset into a DataFrame.
+
+Process: Identifies categorical columns and converts them to numerical format.
+
+Separate: Isolates the target variable (price) from the input features.
+
+Split: Divides the data into training and testing subsets using a fixed random_state for reproducibility.
+
 🛠️ Tech Stack
 Languages: Python
 
